@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des pièces{% endblock %}
+
+{% block body %}
+<div>
+    <div class="text-center py-3"><h2>Pièce</h2></div>
+    <div class="row col-md-10 offset-md-3 py-4">
+        <div class="col">
+            <label for="nom">Nom : {{piece.nom}}</label>
+        </div>
+        <div class="col">
+            <label for="description">Description : {{piece.description}}</label>
+        </div>
+    </div>
+    <div class="row col-md-10 offset-md-3 py-4">
+        <div class="col">
+            <label for="prix">Prix : {{piece.prix}} €</label>
+        </div>
+        <div class="col">
+            <label for="avis">Avis : {{piece.avis}}</label>
+        </div>
+    </div>
+    <div class="row col-md-10 offset-md-3 py-4">
+        <div class="col">
+            <label for="reference">Reference : {{piece.reference}}</label>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
